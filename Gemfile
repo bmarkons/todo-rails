@@ -18,7 +18,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 
 group :development, :test do
-  gem 'byebug', platform: :mri
+  gem 'byebug'
+  gem 'rspec-rails'
 end
 
 group :development do
