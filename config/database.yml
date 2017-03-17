@@ -12,7 +12,7 @@ development:
   host: localhost
   port: 5432
 
-test:
+test: &test
   <<: *default
   database: todo-rails_test
   username: postgres
@@ -24,3 +24,6 @@ production:
   database: todo-rails_production
   username: todo-rails
   password: <%= ENV['TODO-RAILS_DATABASE_PASSWORD'] %>
+
+cucumber:
+  <<: *test

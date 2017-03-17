@@ -20,6 +20,8 @@ gem 'devise'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
 end
 
 group :development do
